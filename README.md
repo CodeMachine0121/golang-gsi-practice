@@ -40,13 +40,13 @@ todo-list/
 
 ### API 端點
 
-| 方法 | 端點 | 功能 |
-|------|------|------|
-| POST | `/students` | 新增學生 |
-| GET | `/students/:id` | 查詢單一學生 |
-| GET | `/students` | 查詢所有學生 |
-| PATCH | `/students/:id` | 更新學生資訊 |
-| DELETE | `/students/:id` | 刪除學生 |
+| 方法   | 端點            | 功能         |
+| ------ | --------------- | ------------ |
+| POST   | `/students`     | 新增學生     |
+| GET    | `/students/:id` | 查詢單一學生 |
+| GET    | `/students`     | 查詢所有學生 |
+| PATCH  | `/students/:id` | 更新學生資訊 |
+| DELETE | `/students/:id` | 刪除學生     |
 
 ### 學生資訊結構
 
@@ -107,6 +107,19 @@ API 返回標準化的錯誤回應：
 - **GSI Protocol**: https://github.com/CodeMachine0121/GSI-Protocol
 - **Gin 文檔**: https://gin-gonic.com/
 - **Testify 文檔**: https://github.com/stretchr/testify
+
+## AI 互動紀錄
+
+```
+/sdd-spec 我想要設計一個學生資訊管理平台
+
+/sdd-arch @features/student_management.feature
+  後端框架使用：golang, gin
+  測試框架：testify
+  專案架構：以 user case  為主的DDD架構
+
+/sdd-impl @features/student_management.feature
+```
 
 ## License
 
